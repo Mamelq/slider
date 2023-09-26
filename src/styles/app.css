@@ -1,0 +1,15 @@
+.slider {}
+.slider .slider__slides{}
+.slider .slider__nav{}
+
+.slides{}
+.slides .slides__slides {}
+.slides .slides__box {}
+.slides .slides__hdl {}
+.slides .slides__linkl {}
+
+.slider-nav {}
+.slider-nav .slider-nav__btn {}
+.slider-nav .slider-nav__btn.slider-nav__btn--prev {}
+
+git commit -
