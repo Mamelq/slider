@@ -1,7 +1,19 @@
 :root {
     --sliderHeight: 300px;
 }
+@font-face {
+    font-family: 'Roboto italic';
+    src: url('../fonts/roboto-italic-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Roboto regular';
+    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 .slider {
     background-color: red;
     font-family: sans-serif;
@@ -55,6 +67,9 @@
     /*animation-duration: 10s;*/
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -88,12 +103,24 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    box-sizing: border-box;
+    color: white;
 }
-
 .slides .slides__hdl {
+    font-family: 'Roboto italic', sans-serif;
+}
+.slider .slides__lead {
+    font-family: 'Roboto regular', sans-serif;
 }
 
-.slides .slides__linkl {
+.slides .slides__link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .slider-nav {
